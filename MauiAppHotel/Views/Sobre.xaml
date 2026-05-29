@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             BackgroundColor="#111625">
+
+    <ScrollView VerticalOptions="Center">
+
+        <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                     Padding="10"
+                     Spacing="10">
+
+            <Label Text="ATIVIDADE AGENDA 13" 
+                   FontSize="12" 
+                   TextColor="#8d99ae" 
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center" />
+
+            <BoxView HeightRequest="1" 
+                     Color="DarkBlue" 
+                     WidthRequest="150" 
+                     HorizontalOptions="Center" 
+                     Margin="0,10,0,10" />
+
+            <Label Text="DESENVOLVEDOR" 
+                   FontSize="12" 
+                   TextColor="#8d99ae" 
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Carlos Eduardo dos Santos Cuba" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
+                   TextColor="#fff" 
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center" />
+
+            <Label Text="ANO DE DESENVOLVIMENTO" 
+                   FontSize="12" 
+                   TextColor="#8d99ae" 
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center" 
+                   Margin="0,15,0,0"/>
+
+            <Label Text="2026" 
+                   FontSize="22" 
+                   FontAttributes="Bold" 
+                   TextColor="#d4af37" 
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center" />
+
+            <BoxView HeightRequest="1" 
+                     Color="DarkBlue" 
+                     WidthRequest="150" 
+                     HorizontalOptions="Center" 
+                     Margin="0,10,0,10" />
+
+            <Label Text="Etec / Centro Paula Souza" 
+                   FontSize="14" 
+                   TextColor="#fff"
+                   FontAttributes="Italic"
+                   HorizontalTextAlignment="Center" 
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Curso Técnico em Desenvolvimento de Sistemas" 
+                   FontSize="13" 
+                   TextColor="#8d99ae" 
+                   HorizontalTextAlignment="Center" 
+                   HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
