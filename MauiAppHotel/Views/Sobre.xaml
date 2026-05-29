@@ -67,7 +67,7 @@
                    HorizontalOptions="Center"/>
 
             <Label Text="Curso Técnico em Desenvolvimento de Sistemas" 
-                   FontSize="13" 
+                   FontSize="14" 
                    TextColor="#8d99ae" 
                    HorizontalTextAlignment="Center" 
                    HorizontalOptions="Center"/>
