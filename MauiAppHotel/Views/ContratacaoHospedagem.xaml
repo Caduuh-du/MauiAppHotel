@@ -15,7 +15,7 @@
             <Label Text="Cálculo da Diária"
                    FontFamily="Kalam"
                    FontSize="50"
-                   TextColor="#d4af37"/>
+                   TextColor="#d4af37" />
 
             <Frame Padding="10">
                 <VerticalStackLayout>
@@ -26,7 +26,7 @@
                                Text="Adultos:" />
 
                         <Label Grid.Row="0" Grid.Column="1"
-                               TextColor="#d4af37"
+                               TextColor= "#d4af37"
                                Text="{Binding Value}"
                                BindingContext="{x:Reference stp_adultos}"/>
 
@@ -60,7 +60,8 @@
                                    TextColor="#d4af37"/>
 
                             <Picker x:Name="pck_quarto"
-                                    Title="Selecione sua Acomodação" />
+                                    Title="Selecione sua Acomodação"
+                                    ItemDisplayBinding="{Binding Descricao}"/>
                         </VerticalStackLayout>
                     </Frame>
 
@@ -76,6 +77,7 @@
                             <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                                 <Label Text="Check-in:" />
                                 <DatePicker x:Name="dtpck_checkin"
+                                            DateSelected="dtpck_checkin_DateSelected"
                                             Format="dd/MM/yyyy" />
                             </HorizontalStackLayout>
 
@@ -94,7 +96,8 @@
                             BorderWidth="1"
                             FontAttributes="Bold" 
                             FontSize="14"
-                            Margin="0,20,0,0"/>
+                            Margin="0,20,0,0"
+                            Clicked="Button_Clicked"/>
 
                     <Button Text="Sobre o Desenvolvedor" 
                             BackgroundColor="#1f2638" 
@@ -106,10 +109,21 @@
                             Margin="0,10,0,0"
                             Clicked="Button_Sobre_Clicked" />
 
+                    <Button Text="Ver Meu Perfil"
+                            Clicked="BtnPerfil_Clicked"
+                            BackgroundColor="#1f2638" 
+                            TextColor="#d4af37" 
+                            BorderColor="#d4af37"
+                            BorderWidth="1"
+                            FontAttributes="Bold" 
+                            FontSize="14"
+                            Margin="0,10,0,0"/>     
+
                 </VerticalStackLayout>
             </Frame>
 
         </VerticalStackLayout>
-
+        
     </ScrollView>
+
 </ContentPage>

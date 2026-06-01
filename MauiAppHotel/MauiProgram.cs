@@ -12,13 +12,14 @@ namespace MauiAppHotel
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Kalam-Bold.ttf", "KalamBold");
+                    fonts.AddFont("Kalam-Light.ttf", "KalamLight");
+                    fonts.AddFont("Kalam-Regular.ttf", "Kalam");
                 });
 
-            builder.Services.AddMauiBlazorWebView();
-
 #if DEBUG
-    		builder.Services.AddBlazorWebViewDeveloperTools();
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
